@@ -4,8 +4,8 @@ public class Main {
         Car car = new Car("ford",4,"v6");
         Car car2 = new Car("mazda",4,"ecoboost");
 
-        Truck truck = new Truck("volvo",6,"v12",true);
-        Truck truck2 = new Truck("man",8,"v12",false);
+        Truck truck = new Truck("volvo",6,"v12",false);
+        Truck truck2 = new Truck("man",8,"v12",true);
 
         Bicycle bicycle = new Bicycle("stels",2);
         Bicycle bicycle2 = new Bicycle("forward",2);
@@ -18,5 +18,7 @@ public class Main {
         station.check(null, bicycle2, null);
         station.check(null, null, truck);
         station.check(null, null, truck2);
+
+
     }
 }

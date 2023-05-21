@@ -12,6 +12,6 @@ public class Bicycle {
     }
 
     public void updateTyre() {
-        System.out.println("Меняем покрышку");
+        System.out.println("Меняем покрышк: "+ getWheelsCount());
     }
 }
