@@ -9,4 +9,14 @@ public class Truck extends Car {
     public void checkTrailer() {
         System.out.println("Проверяем прицеп");
     }
+
+    public void doService() {
+        super.doService();
+        if (this.trailer){
+            this.checkTrailer();
+        }
+        else {
+            System.out.println("Прицепа нет.");
+        }
+    }
 }
