@@ -10,9 +10,8 @@ public class Car extends Bicycle {
         System.out.println("Проверяем двигатель");
     }
 
-
     public void doService() {
-        super.doService();
+        super.doServis();
         this.checkEngine();
     }
 }

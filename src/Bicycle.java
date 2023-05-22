@@ -1,4 +1,4 @@
-public class Bicycle {
+public class Bicycle implements InterfaceDemo{
     public String modelName;
     private int wheelsCount;
 
@@ -14,9 +14,13 @@ public class Bicycle {
     public void updateTyre() {
         System.out.println("Меняем покрышк: "+ getWheelsCount());
     }
-    public void doService() {
+
+
+    @Override
+    public void doServis() {
         System.out.println();
         System.out.println("Обслуживаем " + this.modelName);
         this.updateTyre();
     }
+
 }
